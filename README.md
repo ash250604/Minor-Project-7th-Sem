@@ -2,7 +2,7 @@
 
 Welcome to **FinTrack**, a sleek and intuitive budget management system designed to help individuals track their income, expenses, and savings effortlessly. With a modern design, dynamic financial tools, and interactive visuals, FinTrack aims to transform the way you manage your personal finances.  
 
-![FinTrack](images/logo.png)  
+![FinTrack](logo.png)  
 *Visualize your financial future with FinTrack*
 
 ---
