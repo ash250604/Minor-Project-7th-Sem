@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/37df75b44e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar with Logo -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="images/logo.png" alt="Budget Management System Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="calender.html" id="calendar-link">Calender</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <main class="profile">
+        <h1><i class="fa-solid fa-user"></i> User Profile</h1>
+        <div class="profile-info">
+            <p><strong>Full Name:</strong> <span id="profile-fullname"></span></p>
+            <p><strong>Phone Number:</strong> <span id="profile-phone"></span></p>
+            <p><strong>Email:</strong> <span id="profile-email"></span></p>
+        </div>
+        <button id="logout-btn">Logout</button>
+    </main>
+
+    <script src="profile.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack - Home</title>
+
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/37df75b44e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Navigation Bar with Logo -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="images/logo.png" alt="Budget Management System Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="calender.html" id="calendar-link">Calender</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+                <li><a href="profile.html" id="profile-link"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login/Signup Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <div class="modal-body">
+                <div id="login-form">
+                    <h2 class="login-title">Login</h2>
+                    <form id="login">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" required>
+                        <button type="submit">Login</button>
+                        <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                    </form>
+                </div>
+
+                <!-- Signup Form -->
+                <div id="signup-form" style="display: none;">
+                    <h2 class="login-title">Sign Up</h2>
+                    <form id="signup">
+                        <label for="signup-fullname">Full Name:</label>
+                        <input type="text" id="signup-fullname" required>
+
+
+                        <label for="signup-phone">Phone Number:</label>
+                        <input type="tel" id="signup-phone">
+
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" required>
+
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" required>
+
+                        <label for="signup-confirm-password">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" required>
+
+                        <button type="submit">Sign Up</button>
+                        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Image and Content -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <!-- Left: Image Section -->
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Budget Management Image">
+            </div>
+
+            <!-- Right: Text Content Section -->
+            <div class="hero-content">
+                <h1>Welcome to FinTrack - A Budget Management System</h1>
+                <p>Manage your finances effectively, save smarter, and stay on top of your spending.</p>
+                <a href="calender.html" class="cta-btn" id="get-started">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="content-title">Our Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-calendar"></i>
+                <h3>Calendar</h3>
+                <p>Track your expenses and savings on a monthly, weekly, or yearly basis.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-chart-bar"></i>
+                <h3>Analyze Savings</h3>
+                <p>Visualize your savings with interactive charts and analytics.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-coins"></i>
+                <h3>Manage Savings</h3>
+                <p>Keep track of how much you're saving each month.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2 class="content-title">About Us</h2>
+        <p>The Budget Management System is designed to help individuals manage their finances effectively. Our goal is
+            to simplify budgeting, tracking expenses, and saving money. With our intuitive tools, you can make informed
+            financial decisions with ease.</p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="content-title">How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <i class="fa-solid fa-user-plus"></i>
+                <h3>Create an Account</h3>
+                <p>Sign up and start managing your finances immediately.</p>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-wallet"></i>
+                <h3>Add Your Expenses</h3>
+                <p>Record your expenses and savings on a daily, weekly, or monthly basis.</p>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Track and Analyze</h3>
+                <p>Get visual insights into your spending patterns and savings progress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="content-title">What Our Users Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-item">
+                <p>"This system has helped me save more efficiently than ever before. I love the charts!"</p>
+                <h4>- Gautam Modi</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"Managing my budget has never been this simple. Highly recommended!"</p>
+                <h4>- Milaap Javiya</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"A must-have tool for anyone looking to gain control of their finances."</p>
+                <h4>- Sanjana Joshi</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2 class="content-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>Is the FinTrack - Budget Management System free to use?</h3>
+            <p>Yes, the system is completely free and available for everyone.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I track both my income and expenses?</h3>
+            <p>Absolutely! You can track all your financial transactions with ease.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How secure is my data?</h3>
+            <p>We take data security very seriously and use encryption to ensure your information is safe.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="content-title">Contact Us</h2>
+        <p>Have questions? Get in touch with us:</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 FinTrack - Budget Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

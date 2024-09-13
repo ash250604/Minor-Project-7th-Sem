@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* profile.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #00336751;
+    color: black;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 55px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    /* gap: 20px; */
+}
+
+.nav-list li a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+
+.profile {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile h1 {
+    text-align: center;
+}
+
+.profile h1 i {
+    margin-left: 10px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.profile-info span {
+    font-weight: normal;
+}
+
+button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 0.70rem 1.3rem;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}

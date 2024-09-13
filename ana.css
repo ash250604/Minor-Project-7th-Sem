@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#view {
+    text-align: center;
+    color: #ff4b5c;
+    font-weight: bold;
+    background-color: #ffe2e6;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Analysis Container */
+.analysis-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Back Button */
+#back-button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#back-button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+}
+
+/* Chart Row Layout */
+.chart-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.chart-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.chart-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Data Table */
+.data-table {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.savings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.savings-table th,
+.savings-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.savings-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.savings-table td {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.savings-table td:hover {
+    background-color: #e3f4e3;
+}
+
+/* Download Button */
+#download-pdf {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#download-pdf:hover {
+    background-color: #3e8e41;
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsiveness */
+
+/* Tablet and Below */
+@media (max-width: 1024px) {
+    .chart-row {
+        flex-direction: column;
+    }
+
+    .chart-item {
+        max-width: 90%;
+    }
+
+    .data-table {
+        padding: 15px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    #back-button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .data-table {
+        margin-top: 20px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .analysis-container {
+        padding: 10px;
+    }
+
+    .chart-item {
+        max-width: 100%;
+    }
+
+    #download-pdf {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .savings-table th,
+    .savings-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
