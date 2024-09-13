@@ -2,7 +2,7 @@
 
 Welcome to **FinTrack**, a sleek and intuitive budget management system designed to help individuals track their income, expenses, and savings effortlessly. With a modern design, dynamic financial tools, and interactive visuals, FinTrack aims to transform the way you manage your personal finances.  
 
-![FinTrack](logo.png)  
+![FinTrack](images/logo.png)  
 *Visualize your financial future with FinTrack*
 
 ---
@@ -36,4 +36,3 @@ Start the server:
 npm start
 Access the app: Open your browser and visit http://localhost:3000.
 
-![Total Visitors:](https://visitor-badge.glitch.me/badge?page_id=ash250604.Minor-Project-7th-Sem)
