@@ -9,7 +9,7 @@ function isAuthenticated() {
 function displayUserProfile() {
     if (!isAuthenticated()) {
         // Redirect to login page or home page if not authenticated
-        window.location.href = 'home.html'; // Redirect to home page or login page
+        window.location.href = 'index.html'; // Redirect to home page or login page
         return;
     }
 
@@ -28,7 +28,7 @@ function displayUserProfile() {
 function handleLogout() {
     localStorage.removeItem('userLoggedIn');
     localStorage.removeItem('userDetails');
-    window.location.href = 'home.html'; // Redirect to home page after logout
+    window.location.href = 'index.html'; // Redirect to home page after logout
 }
 
 // Event listener for the logout button
